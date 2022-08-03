@@ -1,0 +1,36 @@
+<!--
+JavaScript Class Exercise - 2
+
+Task: If the Add Button is pressed, add the text "Add Clicked" to the DIV (result). If the Update button is pressed, add the text "Update Clicked" to the DIV (result). If the delete button is pressed, add the text "Delete Clicked" to the DIV (result)
+
+HINT: Use "+=" for innerHTML so that it can append to the text inside the DIV and not overwrite it.
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript Event Handling</title>
+</head>
+<body>   
+    <button onclick="addfun()" id="add">Add</button>
+    <button onclick="updatefun()" id="update">Update</button>
+    <button onclick="delfun()" id="delete">Delete</button>
+    <div id="result"></div>
+    <script>
+        function addfun()
+        {
+            document.getElementById("result").innerHTML+="Add Clicked ";
+        }
+        function updatefun()
+        {
+            document.getElementById("result").innerHTML+="Update Clicked ";
+        }
+        function delfun()
+        {
+            document.getElementById("result").innerHTML+="Delete Clicked ";
+        }
+        
+    </script>
+</body>
+</html>
